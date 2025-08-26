@@ -36,7 +36,7 @@ export default function Home() {
         <MinimalAbout description='We are a company that values excellence and trust.' />
       </section>
       <section id='services' className='bg-gradient-to-b from-white to-[#f7fbff] py-16'>
-        <Bento items={[{ title: 'Service One', description: 'Description of service.', icon: <Image src='/images/logo.svg' alt='Service One' />, }, { title: 'Service Two', description: 'Description of service.', icon: <Image src='/images/logo.svg' alt='Service Two' />, }]} />
+        <Bento items={[{ title: 'Service One', description: 'Description of service.' }, { title: 'Service Two', description: 'Description of service.' }]} />
       </section>
       <section id='cta' className='bg-[#eef6ff] py-16'>
         <ContentTextbox title={<h2>Ready to Get Started?</h2>} description={<p>Contact us for more information.</p>} />
