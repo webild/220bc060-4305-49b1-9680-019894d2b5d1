@@ -1,10 +1,7 @@
 "use client"
 import SimpleHero from '@/components/sections/layouts/hero/SimpleHero';
 import MinimalAbout from '@/components/sections/layouts/about/MinimalAbout';
-import ServicesSection from '@/components/bento/ServiceBento';
-import TestimonialsSection from '@/components/bento/TestimonialsBento';
-import TermsSection from '@/components/bento/TermsAccordion';
-import PolicySection from '@/components/bento/PolicyBento';
+import Bento from '@/components/bento/Bento';
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import { ContentTextbox } from '@/components/textbox/ContentTextbox';
 import { useState } from 'react';
@@ -39,16 +36,7 @@ export default function Home() {
         <MinimalAbout description='We are a company that values excellence and trust.' />
       </section>
       <section id='services' className='bg-gradient-to-b from-white to-[#f7fbff] py-16'>
-        <ServicesSection items={[{ title: 'Service One', description: 'Description of service.', icon: <Image src='/images/logo.svg' alt='Service One' />, }, { title: 'Service Two', description: 'Description of service.', icon: <Image src='/images/logo.svg' alt='Service Two' />, }]} />
-      </section>
-      <section id='testimonials' className='bg-soft-noise py-16'>
-        <TestimonialsSection items={[{ quote: 'Best service ever!', name: 'John Doe', role: 'Client', }, { quote: 'Highly recommend!', name: 'Jane Smith', role: 'Customer', }]} />
-      </section>
-      <section id='terms' className='bg-[#f5f5f5] py-16'>
-        <TermsSection overview='Our terms and conditions apply.' />
-      </section>
-      <section id='policy' className='bg-white py-16'>
-        <PolicySection overview='Your privacy is important to us.' />
+        <Bento items={[{ title: 'Service One', description: 'Description of service.', icon: <Image src='/images/logo.svg' alt='Service One' />, }, { title: 'Service Two', description: 'Description of service.', icon: <Image src='/images/logo.svg' alt='Service Two' />, }]} />
       </section>
       <section id='cta' className='bg-[#eef6ff] py-16'>
         <ContentTextbox title={<h2>Ready to Get Started?</h2>} description={<p>Contact us for more information.</p>} />
